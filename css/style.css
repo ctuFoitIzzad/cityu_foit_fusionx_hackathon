@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0b0f19;
+  color: #e5e7eb;
+}
+
+section {
+  padding: 4rem 8%;
+}
+
+h1, h2 {
+  color: #38bdf8;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #000;
+}
+
+.secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #cbd5f5;
+}
