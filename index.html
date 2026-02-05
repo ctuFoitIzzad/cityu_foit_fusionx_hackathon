@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>City FusionX Hackathon Season 1.0 2026</title>
+  <title>CityU FusionX Hackathon Season 1.0 2026</title>
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +19,17 @@
 
   <!-- HERO / INTRO -->
   <header id="hero">
-    <h1>City FusionX Hackathon Season 1.0 2026</h1>
+    <div class="container">
+
+  <div class="hero-brand">
+  <img src="images/icon/test-icon_resize-5000.png" class="hero-icon" />
+  <h1>CityU FusionX Hackathon Season 1.0 2026</h1>
+  </div>
+
+
     <p class="theme">AI, Data Science & Blockchain for Smart and Sustainable Solutions</p>
     <p class="about">
-      City FusionX Hackathon aligns with Malaysia IR4.0 and FOIT goals, engaging students
+      CityU FusionX Hackathon aligns with Malaysia IR4.0 and FOIT goals, engaging students
       in AI, Data Analytics, and Blockchain innovation through a two-stage competition.
     </p>
 
@@ -35,81 +42,320 @@
       <a href="GOOGLE_FORM_REGISTER" target="_blank" class="btn primary">Register</a>
       <a href="GOOGLE_FORM_SUBMIT" target="_blank" class="btn secondary">Submit</a>
     </div>
+    </div>
   </header>
 
   <!-- TOP 10 TEAMS -->
   <section id="top-teams" class="hidden">
+    <div class="container">
     <h2>Top 10 Shortlisted Teams</h2>
     <div id="topTeamsContainer"></div>
+    </div>
   </section>
 
   <!-- REGISTERED TEAMS -->
-  <section id="teams">
+<section id="teams" class="gradient-teams">
+  <div class="container">
+
     <h2>Registered Teams</h2>
-    <ul id="teamList"></ul>
-  </section>
+    <p class="section-intro">
+      Teams from across faculties participating in CityU FusionX Hackathon.
+    </p>
+
+    <div class="team-container">
+      <div id="teamTags" class="team-tags">
+        <!-- Team pills injected here -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- PROBLEM STATEMENT -->
-  <section id="problem">
-    <h2>Problem Statement</h2>
-    <h3>Yet to decide</h3>
-    <p>The Challenge: ...</p>
-    <p><strong>Impact Areas:</strong> Smart Cities, Sustainability, Digital Economy</p>
-  </section>
+<section id="problems" class="gradient-problems">
+  <div class="container">
+    <h2>Problem Statements</h2>
+    <p class="section-intro">
+      Choose one of the problems to work on for the hackathon.
+    </p>
+
+    <div class="problem-grid">
+
+      <!-- Fake News Detection -->
+      <div class="problem-card">
+        <h3>Fake News Detection</h3>
+        <p class="problem-statement">
+          How can we build a system that automatically detects fake news while ensuring verification results are tamper-proof, transparent, and reusable?
+        </p>
+        <p class="problem-concept">
+          Users submit a news article or URL; AI classifies content as Real / Fake / Suspicious; verification results are stored on blockchain for transparency.
+        </p>
+      </div>
+
+      <!-- Decentralized Resume Screening -->
+      <div class="problem-card">
+        <h3>Decentralized Resume Screening System</h3>
+        <p class="problem-statement">
+          How can we design a fair, transparent, and secure hiring support system that prevents resume tampering and promotes unbiased candidate evaluation?
+        </p>
+        <p class="problem-concept">
+          Candidates upload resumes; AI extracts skills, experience, qualifications and generates suitability score; evaluation results stored on blockchain.
+        </p>
+      </div>
+
+      <!-- Credit Scoring System -->
+      <div class="problem-card">
+        <h3>Credit Scoring System</h3>
+        <p class="problem-statement">
+          How can we build a trustworthy and transparent credit scoring system that uses AI for prediction while avoiding centralized control?
+        </p>
+        <p class="problem-concept">
+          User financial behavior is analyzed; AI predicts creditworthiness; scores and proof data are stored on blockchain with no single authority controlling it.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- ELIGIBILITY -->
-  <section id="eligibility">
+<section id="eligibility" class="gradient-eligibility">
+  <div class="container">
     <h2>Eligibility</h2>
-    <ul>
-      <li>Open to all registered City University Malaysia students</li>
-      <li>Highly encouraged to form cross-faculty teams</li>
-    </ul>
-  </section>
+    <p class="section-intro">
+      Who can participate in City FusionX Hackathon
+    </p>
+
+    <div class="eligibility-grid">
+
+      <div class="eligibility-card">
+        <div class="card-icon">🎓</div>
+        <h3>CityU Students Only</h3>
+        <p>Open to all registered City University Malaysia students.</p>
+      </div>
+
+      <div class="eligibility-card">
+        <div class="card-icon">🤝</div>
+        <h3>Cross-Faculty Teams Encouraged</h3>
+        <p>Highly encourage forming teams with students from different faculties.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   <!-- PRIZES -->
-  <section id="prizes">
-    <h2>Prizes</h2>
-    <div class="prize">🏆 Champion: RM1000</div>
-    <div class="prize">🥈 1st Runner-up: RM700</div>
-    <div class="prize">🥉 2nd Runner-up: RM500</div>
+  <section id="prizes" class="gradient-prizes">
+    <div class="container">
+
+      <h2>Prizes</h2>
+      <p class="section-intro">
+        Top teams will be rewarded for innovation, impact, and technical excellence.
+      </p>
+
+      <div class="prize-grid">
+
+        <div class="prize-card champion">
+          <i class="fas fa-trophy prize-icon"></i>
+          <div class="prize-rank">Champion</div>
+          <div class="prize-amount">RM 1,000</div>
+        </div>
+
+        <div class="prize-card">
+          <i class="fas fa-medal prize-icon"></i>
+          <div class="prize-rank">1st Runner-up</div>
+          <div class="prize-amount">RM 700</div>
+        </div>
+
+        <div class="prize-card">
+          <i class="fas fa-medal prize-icon"></i>
+          <div class="prize-rank">2nd Runner-up</div>
+          <div class="prize-amount">RM 500</div>
+        </div>
+
+      </div>
+
+    </div>
   </section>
+
 
   <!-- TIMELINE -->
-  <section id="timeline">
-    <h2>Competition Timeline</h2>
-    <ul>
-      <li>1–7 March 2026: Registration & Submission</li>
-      <li>8–14 March 2026: Evaluation</li>
-      <li>16 March 2026: Shortlisted Teams Announcement</li>
-      <li>16–28 March 2026: Application Development</li>
-      <li>30 March 2026: Grand Final</li>
-    </ul>
-  </section>
+<section id="timeline" class="gradient-timeline">
+  <div class="container">
 
-  <!-- ORGANISING TEAM -->
-  <section id="committee">
+    <h2>Competition Timeline</h2>
+    <p class="section-intro">
+      Key milestones from registration to the grand final.
+    </p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">1 – 7 March 2026</div>
+        <div class="timeline-content">
+          Registration & Project Submission
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">8 – 14 March 2026</div>
+        <div class="timeline-content">
+          Evaluation Period
+        </div>
+      </div>
+
+      <div class="timeline-item highlight">
+        <div class="timeline-date">16 March 2026</div>
+        <div class="timeline-content">
+          Announcement of Top 10 Shortlisted Teams
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">16 – 28 March 2026</div>
+        <div class="timeline-content">
+          Application Development Phase
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">30 March 2026</div>
+        <div class="timeline-content">
+          Grand Final (Live Pitch & Demo)
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- ORGANISING TEAM-->
+<section id="committee" class="gradient-team">
+  <div class="container">
+
     <h2>The Team</h2>
-    <div id="committeeGrid"></div>
-  </section>
+    <p class="section-intro">
+      The committee behind CityU FusionX Hackathon.
+    </p>
+
+    <div class="committee-grid">
+
+      <div class="committee-card">
+        <div class="committee-photo">
+          <img src="images/teams/assoc-prof-dr-mohd-nurul-hafiz-bin-ibrahim.jpg" alt="Assoc Prof Dr Mohd Nurul Hafiz Bin Ibrahim" />
+        </div>
+        <div class="committee-name">Assoc Prof Dr Mohd Nurul Hafiz Bin Ibrahim</div>
+        <div class="committee-role">Programme Chair</div>
+      </div>
+
+      <div class="committee-card">
+        <div class="committee-photo">
+          <img src="images/teams/nazmirul-izzad-bin-nassir.jpg" alt="Mr Nazmirul Izzad Bin Nassir" />
+        </div>
+        <div class="committee-name">Mr Nazmirul Izzad Bin Nassir</div>
+        <div class="committee-role">Technical Lead</div>
+      </div>
+
+      <div class="committee-card">
+        <div class="committee-photo">
+          <img src="images/teams/safia-adrina-binti-mohd-zulkifli.jpg" alt="Ms Safia Adrina Binti Mohd Zulkifli" />
+        </div>
+        <div class="committee-name">Ms Safia Adrina Binti Mohd Zulkifli</div>
+        <div class="committee-role">Operations Lead</div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
 
   <!-- PARTNERS -->
-  <section id="partners">
+  <section id="partners" class="hidden">
+    <div class="container">
     <h2>Partners & Sponsors</h2>
     <div class="logos">
       <img src="images/assets/sponsor1.png" />
       <img src="images/assets/partner1.png" />
     </div>
+    </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <button class="faq-question">How do I join?</button>
-      <div class="faq-answer">Complete the official application form...</div>
+  <section id="faq" class="gradient-faq">
+  <div class="container">
+    <h2>Frequently Asked Questions (FAQs)</h2>
+    <p class="section-intro">
+      Answers to the most common questions about CityU FusionX Hackathon.
+    </p>
+
+    <div class="accordion">
+
+      <div class="accordion-item">
+        <button class="accordion-header">How do I join?</button>
+        <div class="accordion-body">
+          Complete the official application form with your full team roster, contact details, and a short introduction. We review submissions on a rolling basis and confirm teams via email.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Can I compete alone?</button>
+        <div class="accordion-body">
+          No, you need to form three to five students & appoint a team leader before submitting for registration. At least one teammate must be able to code so you can build and demo a working prototype.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">I am not good at coding. Can I still join?</button>
+        <div class="accordion-body">
+          You can, as long as you apply as a team with at least one technical member. Bring your strengths in design, research, business, or storytelling the hackathon rewards cross-disciplinary teams.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">I am a non-Malaysian. Am I eligible to join?</button>
+        <div class="accordion-body">
+          Yes. Participants with a valid Malaysian PR, work visa, or student visa who are currently based in Malaysia are welcome to compete.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Can my team members consist of different universities?</button>
+        <div class="accordion-body">
+          No, this competition is exclusively prioritized for City University Malaysia students.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">How does the competition work?</button>
+        <div class="accordion-body">
+          You need to submit your prototype with the relevant items stated through online submission here. Shortlisted team will be announced later on this website & they will be competing at CityU Cyberjaya Campus.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Do we need to pay anything to join this competition?</button>
+        <div class="accordion-body">
+          No, it is completely free.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">Can I be in multiple teams at a time?</button>
+        <div class="accordion-body">
+          No, this is not allowed. If caught, all related teams will be disqualified immediately.
+        </div>
+      </div>
+
     </div>
-    <!-- Repeat -->
-  </section>
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer>

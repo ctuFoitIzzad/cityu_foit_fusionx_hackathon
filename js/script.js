@@ -28,3 +28,23 @@ document.querySelectorAll(".faq-question").forEach(btn => {
       answer.style.display === "block" ? "none" : "block";
   });
 });
+
+
+// FAQ Accordion
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+
+accordionHeaders.forEach(header => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    const isActive = item.classList.contains("active");
+
+    // Close all items
+    document.querySelectorAll(".accordion-item").forEach(i => i.classList.remove("active"));
+
+    // Toggle current
+    if (!isActive) {
+      item.classList.add("active");
+    }
+  });
+});
+
