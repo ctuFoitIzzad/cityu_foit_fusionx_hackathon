@@ -1,33 +1,41 @@
-const TEAM_CSV_URL = "YOUR_PUBLIC_CSV_URL";
+// Load Team Tags from CSV
+const TEAM_CSV_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vSc0ZlL_ci5wH2jjABfU6WchjB8abDTVS9xh4ryzMq_8UiL2AUBEvQ_mnF-4iSufwqW2Y4DL2ZVmYMV/pub?gid=461577163&single=true&output=csv";
 
 async function loadTeams() {
-  const res = await fetch(TEAM_CSV_URL);
-  const data = await res.text();
+  try {
+    const res = await fetch(TEAM_CSV_URL);
+    const text = await res.text();
 
-  const rows = data.split("\n").slice(1);
-  const teamList = document.getElementById("teamList");
+    const rows = text.trim().split("\n");
+    rows.shift(); // remove header row
 
-  rows.forEach(row => {
-    const cols = row.split(",");
-    if (cols[0]) {
-      const li = document.createElement("li");
-      li.textContent = cols[0]; // Team Name
-      teamList.appendChild(li);
+    const teamTags = document.getElementById("teamTags");
+    teamTags.innerHTML = "";
+
+    rows.forEach(row => {
+      const teamName = row.split(",")[0]?.replace(/"/g, "").trim();
+      if (!teamName) return;
+
+      const tag = document.createElement("span");
+      tag.className = "team-pill";
+      tag.textContent = teamName;
+
+      teamTags.appendChild(tag);
+    });
+
+    // Optional: update team counter if exists
+    const teamCountEl = document.getElementById("teamCount");
+    if (teamCountEl) {
+      teamCountEl.textContent = rows.length;
     }
-  });
 
-  document.getElementById("teamCount").textContent = rows.length;
+  } catch (err) {
+    console.error("Failed to load teams:", err);
+  }
 }
 
-loadTeams();
-
-document.querySelectorAll(".faq-question").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const answer = btn.nextElementSibling;
-    answer.style.display =
-      answer.style.display === "block" ? "none" : "block";
-  });
-});
+document.addEventListener("DOMContentLoaded", loadTeams);
 
 
 // FAQ Accordion

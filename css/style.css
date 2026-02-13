@@ -160,21 +160,35 @@ background: linear-gradient(
 .team-tags {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
-  max-height: 260px;
-  overflow-y: auto;
-  padding-right: 6px;
+  margin-top: 2rem;
 }
 
 /* Individual pill */
-.team-tag {
-  padding: 8px 14px;
-  border-radius: 999px;
+.team-pill {
+padding: 0.45rem 0.9rem;
   font-size: 0.9rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.25);
   color: #e5e7eb;
-  background: #020617;
-  border: 1px solid #1e293b;
   white-space: nowrap;
+  transition: 
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    color 0.2s ease;
+}
+
+/* Hover effect */
+.team-pill:hover {
+  transform: translateY(-2px);
+  background: rgba(96, 165, 250, 0.12);
+  border-color: rgba(96, 165, 250, 0.4);
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(96, 165, 250, 0.25);
+  cursor: default;
 }
 
 /* Optional hover (very subtle) */
@@ -183,7 +197,38 @@ background: linear-gradient(
   border-color: #2563eb;
 }
 
+.team-tags:hover .team-pill {
+  opacity: 0.6;
+}
+
+.team-tags:hover .team-pill:hover {
+  opacity: 1;
+}
+
 /*Problem Statement*/
+
+.problem-block {
+  border-top: 1px dashed rgba(148,163,184,0.15);
+  padding-top: 0.6rem;
+  margin-top: 1.2rem;
+}
+
+.problem-block-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #60a5fa;
+  margin-bottom: 0.4rem;
+}
+
+.problem-block-header i {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
 
 .problem-grid {
   display: grid;
@@ -212,17 +257,50 @@ background: linear-gradient(
   margin-bottom: 0.75rem;
 }
 
-.problem-statement {
+.problem-icon {
+  font-size: 2rem;
+  color: #60a5fa;
+  margin-bottom: 0.75rem;
+}
+
+.problem-context {
   font-size: 0.95rem;
   color: #94a3b8;
   margin-bottom: 0.75rem;
 }
 
-.problem-concept {
+.problem-statement {
+ font-size: 0.95rem;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+/* Concept list */
+.problem-concept-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.problem-concept-list li {
+  position: relative;
+  padding-left: 1.3rem;
+  margin-bottom: 0.55rem;
   font-size: 0.9rem;
   color: #cbd5e1;
 }
 
+/* Small bullet indicator */
+.problem-concept-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #60a5fa;
+}
+
+.problem-block:hover .problem-block-header {
+  opacity: 1;
+}
 
 .gradient-problems {
  background: linear-gradient(
