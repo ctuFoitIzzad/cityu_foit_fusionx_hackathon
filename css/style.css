@@ -634,6 +634,44 @@ li {
   color: #94a3b8;
 }
 
+.partner-group {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.partner-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #60a5fa;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.partner-logos img {
+  height: 60px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.partner-group:not(:first-child) {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 2rem;
+}
+
 @media (max-width: 600px) {
   .stats {
     flex-direction: column;
