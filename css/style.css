@@ -358,6 +358,64 @@ padding: 0.45rem 0.9rem;
   background: rgba(255,255,255,0.06);
 }
 
+#submission {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.submission-grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; /* mobile default */
+}
+
+.submission-card {
+  padding: 2rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.submission-card i {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.submission-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.submission-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.submission-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.06);
+}
+
+.required-badge {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  background: #ef4444;
+  color: white;
+  border-radius: 6px;
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 1024px) {
+  .submission-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .gradient-eligibility {
   background: linear-gradient(
     180deg,
