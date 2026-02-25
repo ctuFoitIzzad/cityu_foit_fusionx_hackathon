@@ -106,6 +106,40 @@ background: #1e293b;
   display: none;
 }
 
+/* Navigation Bar */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 15, 30, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-container a:hover {
+  color: #38bdf8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 #hero {
 background: linear-gradient(
     180deg,
