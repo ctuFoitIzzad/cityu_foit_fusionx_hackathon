@@ -309,6 +309,55 @@ padding: 0.45rem 0.9rem;
     #0b0f19 100%
   );
 }
+
+#tech-stack {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.tech-grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr; /* default = mobile */
+}
+
+/* Desktop: 4 columns */
+@media (min-width: 1024px) {
+  .tech-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tech-card {
+  padding: 2rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.tech-card i {
+  font-size: 2rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+}
+
+.tech-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.tech-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.tech-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.06);
+}
+
 .gradient-eligibility {
   background: linear-gradient(
     180deg,
