@@ -24,10 +24,17 @@ async function loadTeams() {
       teamTags.appendChild(tag);
     });
 
+    const totalTeams = rows.length;
+
     // Optional: update team counter if exists
     const teamCountEl = document.getElementById("teamCount");
     if (teamCountEl) {
       teamCountEl.textContent = rows.length;
+    }
+
+     const studentCountEl = document.getElementById("studentCount");
+    if (studentCountEl) {
+      studentCountEl.textContent = totalTeams * 3;
     }
 
   } catch (err) {

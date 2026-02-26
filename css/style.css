@@ -450,6 +450,54 @@ padding: 0.45rem 0.9rem;
   }
 }
 
+#criteria {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.criteria-grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+.criteria-card {
+  padding: 2rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.criteria-card i {
+  font-size: 2rem;
+  color: #a78bfa;   /* subtle purple */
+  margin-bottom: 1rem;
+}
+
+.criteria-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.criteria-card p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+.criteria-card:hover {
+  transform: translateY(-6px);
+  background: rgba(167,139,250,0.08);
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+  .criteria-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
 .gradient-eligibility {
   background: linear-gradient(
     180deg,
